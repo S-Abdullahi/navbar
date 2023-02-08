@@ -106,13 +106,26 @@ nav {
     width: 100vw;
     height: 0;
     overflow: hidden;
-    /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); */
+    transition: all 0.3s linear;
   }
 
-  .menu-con.show{
-      height: auto;
-      margin-top: 3rem;
-    }
+  .menu-con.show {
+    height: auto;
+    margin-top: 3rem;
+  }
+
+  .menu-con li {
+    transition: all 0.3s linear;
+    cursor: pointer;
+    width: 90%;
+  }
+
+  .menu-con li:hover {
+    background-color: rgba(0, 255, 0, 0.135);
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
 
   .menu-unordered {
     flex-direction: column;
