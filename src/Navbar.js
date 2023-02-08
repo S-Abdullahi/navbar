@@ -17,7 +17,7 @@ export default function Navbar() {
           {links.map((link) => {
             const { id, url, text } = link;
             return (
-              <li>
+              <li key={id}>
                 <a href="#">{text}</a>
               </li>
             );
@@ -29,7 +29,7 @@ export default function Navbar() {
         {social.map((socialIcon) => {
           const { id, url, icon } = socialIcon;
           return (
-            <a href={url} className="icon">
+            <a key={id} href={url} className="icon">
               {icon}
             </a>
           );
