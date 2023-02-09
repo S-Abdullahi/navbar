@@ -12,9 +12,9 @@ body {
 nav {
   width: 100vw;
   height: auto;
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1rem 1rem;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 }
@@ -23,21 +23,13 @@ nav {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  width: 20%;
   margin-left: 2%;
-}
-
-.logo {
-  font-weight: 600;
+  padding: 0;
 }
 
 .menu-bar {
   font-size: 2rem;
   opacity: 0;
-}
-
-.menu-con {
-  width: 25%;
 }
 
 .menu-unordered {
@@ -47,6 +39,7 @@ nav {
 
 .menu-con li {
   list-style: none;
+  margin-right: 2rem;
 }
 
 .menu-con a {
@@ -63,15 +56,17 @@ nav {
 }
 .icon-con {
   margin-right: 7%;
-  width: 5%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0;
 }
 
 .icon {
   font-size: 1.1rem;
   color: rgb(72, 161, 234);
   cursor: pointer;
+  margin-left: 0.5rem;
 }
 
 .icon:hover {
